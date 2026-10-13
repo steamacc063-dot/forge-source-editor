@@ -1,9 +1,9 @@
 # Forge — Source 1 Editor
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/baiehclaca/forge-source-editor/actions/workflows/ci.yml/badge.svg)](https://github.com/baiehclaca/forge-source-editor/actions/workflows/ci.yml)
+[![CI](https://github.com/steamacc063-dot/forge-source-editor/actions/workflows/ci.yml/badge.svg)](https://github.com/steamacc063-dot/forge-source-editor/actions/workflows/ci.yml)
 
-[Download](https://github.com/baiehclaca/forge-source-editor/releases) · [Report a bug](https://github.com/baiehclaca/forge-source-editor/issues/new/choose) · [Contribute](CONTRIBUTING.md)
+[Download](https://github.com/steamacc063-dot/forge-source-editor/releases) · [Report a bug](https://github.com/steamacc063-dot/forge-source-editor/issues/new/choose) · [Contribute](CONTRIBUTING.md)
 
 A runnable desktop editor foundation with an Unreal/Unity-style workspace for native Source 1 maps. Version 0.1 is an early development release, not a complete Hammer replacement. The interface uses a classic gray desktop theme inspired by the supplied 3ds Max 2016 reference: compact beveled controls, blue tool selection and a yellow viewport outline.
 
@@ -11,12 +11,12 @@ A runnable desktop editor foundation with an Unreal/Unity-style workspace for na
 
 ## Start
 
-Download the latest [release](https://github.com/baiehclaca/forge-source-editor/releases), then open **Forge.app** on an Apple Silicon Mac, or extract the Windows portable package and run **Forge.exe**. These local development builds are unsigned. Windows packaging is supplied but has not been run on Windows.
+Download the latest [release](https://github.com/steamacc063-dot/forge-source-editor/releases), then choose the macOS DMG (Apple Silicon or Intel), Windows installer or portable ZIP, or Linux AppImage, Debian package, or tar archive. Builds are unsigned and macOS builds are not notarized; the operating system may require approval to open them. Packages are built on native GitHub runners. Interactive operation on Windows and Linux and real Source SDK builds still need community testing.
 
 From source, use Node.js 22.12 or later (Node.js 24 is used by CI):
 
 ```sh
-git clone https://github.com/baiehclaca/forge-source-editor.git
+git clone https://github.com/steamacc063-dot/forge-source-editor.git
 cd forge-source-editor
 npm ci
 npx install-electron
@@ -108,7 +108,7 @@ See `THIRD_PARTY.md` for library attribution. No Valve assets are included.
 
 Forge is released under the [MIT license](LICENSE). Bug reports, focused pull requests and real Source SDK compatibility reports are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), [ROADMAP.md](ROADMAP.md) and [SECURITY.md](SECURITY.md) before contributing.
 
-Run `npm run package:mac` or `npm run package:windows` to create a desktop package under `release/`. Releases contain unsigned desktop builds, source code and checksums.
+Run `npm run package:mac`, `npm run package:windows`, or `npm run package:linux` to create a desktop package under `release/`. Releases contain unsigned desktop builds, source code and checksums.
 
 ## Map properties and environment
 

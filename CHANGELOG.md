@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.1 — 2026-10-13
+
+- Native world settings, sky enclosure, sunlight, fog and sky camera helpers.
+- Sky diagnostics and separate VMF codec and brush geometry modules.
+- Extracted scene hierarchy, vector fields and editor utilities.
+- Automated macOS, Windows and Linux release packages with checksums.
+
 ## v0.1.0 — 2026-10-13
 
 Initial open-source preview release.

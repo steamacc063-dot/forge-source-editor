@@ -1,6 +1,6 @@
 {
   "name": "forge-source-editor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "A modern desktop level editor for Source 1",
@@ -10,8 +10,9 @@
     "desktop": "npm run build && electron .",
     "build": "tsc --noEmit && vite build",
     "test": "tsx --test tests/*.test.ts",
-    "package:mac": "npm run build && electron-packager . Forge --platform=darwin --arch=arm64 --out=release --overwrite --ignore='^/(src|tests|examples|node_modules|release|docs|.git|.github)'",
-    "package:windows": "npm run build && electron-packager . Forge --platform=win32 --arch=x64 --out=release --overwrite --ignore='^/(src|tests|examples|node_modules|release|docs|.git|.github)'"
+    "package:mac": "npm run build && electron-builder --mac --publish never",
+    "package:windows": "npm run build && electron-builder --win --x64 --publish never",
+    "package:linux": "npm run build && electron-builder --linux --x64 --publish never"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
@@ -26,6 +27,7 @@
     "@types/three": "^0.180.0",
     "@vitejs/plugin-react": "^5.0.0",
     "electron": "^44.7.0",
+    "electron-builder": "^26.15.3",
     "tsx": "^4.20.0",
     "typescript": "^5.9.3",
     "vite": "^7.1.0"
@@ -39,11 +41,11 @@
   "author": "Teodor Walter Vido",
   "repository": {
     "type": "git",
-    "url": "https://github.com/baiehclaca/forge-source-editor.git"
+    "url": "https://github.com/steamacc063-dot/forge-source-editor.git"
   },
-  "homepage": "https://github.com/baiehclaca/forge-source-editor#readme",
+  "homepage": "https://github.com/steamacc063-dot/forge-source-editor#readme",
   "bugs": {
-    "url": "https://github.com/baiehclaca/forge-source-editor/issues"
+    "url": "https://github.com/steamacc063-dot/forge-source-editor/issues"
   },
   "keywords": [
     "source-engine",
@@ -54,5 +56,49 @@
     "electron",
     "threejs",
     "typescript"
-  ]
+  ],
+  "build": {
+    "appId": "io.github.forge-source-editor",
+    "productName": "Forge",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "LICENSE",
+      "THIRD_PARTY.md",
+      "licenses/**/*",
+      "package.json",
+      "!node_modules/**/*"
+    ],
+    "artifactName": "Forge-${version}-${os}-${arch}.${ext}",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.developer-tools",
+      "identity": null
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "tar.gz"
+      ],
+      "category": "Development",
+      "maintainer": "Teodor Walter Vido <112107182+baiehclaca@users.noreply.github.com>"
+    }
+  }
 }
