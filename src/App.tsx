@@ -1,3 +1,4 @@
+import { MapSettings } from './components/MapSettings';
 import { Vector3 } from 'three';
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import {
@@ -895,18 +896,7 @@ export default function App() {
               </div>
             </>
           ) : (
-            <div className="inspector-empty">
-              <Crosshair size={32} />
-              <strong>Nothing selected</strong>
-              <p>Select an object in the viewport or scene hierarchy to edit it.</p>
-              <button onClick={addBrush}>
-                <Plus size={14} />
-                Add brush
-              </button>
-              <div className="shortcut-tip">
-                <kbd>B</kbd> add brush <kbd>F</kbd> focus
-              </div>
-            </div>
+            <MapSettings project={project} onChange={commit} />
           )}
         </aside>
       </main>
