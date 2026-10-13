@@ -1,6 +1,6 @@
 import { Box3, BufferGeometry, Euler, Float32BufferAttribute, Matrix4, Plane, Quaternion, Vector3 } from 'three';
 import type { MapObject, Side, V3 } from '../model';
-import { v } from '../model';
+const v = (point: V3) => new Vector3(...point);
 
 /** Source uses Z-up coordinates and clockwise brush plane points. */
 export function matrix(o: MapObject): Matrix4 {

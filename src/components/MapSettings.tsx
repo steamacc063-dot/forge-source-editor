@@ -10,7 +10,7 @@ export function MapSettings({ project, onChange }: { project: Project; onChange:
   function enclose() {
     const next = clone(project);
     const extent = new Box3();
-    next.objects.filter(o => !o.parent).forEach(o => extent.union(bounds(o)));
+    next.objects.forEach(o => extent.union(bounds(o)));
     if (extent.isEmpty()) extent.set(new Vector3(-512, -512, 0), new Vector3(512, 512, 512));
     extent.expandByScalar(128);
     const min = extent.min, max = extent.max, center = extent.getCenter(new Vector3()), size = extent.getSize(new Vector3());
