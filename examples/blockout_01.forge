@@ -1,0 +1,2494 @@
+{
+  "format": "forge",
+  "version": 1,
+  "name": "blockout_01",
+  "objects": [
+    {
+      "id": "9ade18de-551a-444f-9777-d83ceb9daca9",
+      "name": "Floor",
+      "kind": "brush",
+      "position": [
+        0,
+        0,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              512,
+              -384,
+              -8
+            ],
+            [
+              512,
+              -384,
+              8
+            ],
+            [
+              512,
+              384,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -512,
+              384,
+              -8
+            ],
+            [
+              -512,
+              384,
+              8
+            ],
+            [
+              -512,
+              -384,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -512,
+              384,
+              -8
+            ],
+            [
+              512,
+              384,
+              -8
+            ],
+            [
+              512,
+              384,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              512,
+              -384,
+              -8
+            ],
+            [
+              -512,
+              -384,
+              -8
+            ],
+            [
+              -512,
+              -384,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -512,
+              -384,
+              8
+            ],
+            [
+              -512,
+              384,
+              8
+            ],
+            [
+              512,
+              384,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -512,
+              384,
+              -8
+            ],
+            [
+              -512,
+              -384,
+              -8
+            ],
+            [
+              512,
+              -384,
+              -8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "3c02426a-f0ed-4ce4-9153-596f7b19569a",
+      "name": "Ceiling",
+      "kind": "brush",
+      "position": [
+        0,
+        0,
+        392
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              512,
+              -384,
+              -8
+            ],
+            [
+              512,
+              -384,
+              8
+            ],
+            [
+              512,
+              384,
+              8
+            ]
+          ],
+          "material": "TOOLS/TOOLSNODRAW"
+        },
+        {
+          "points": [
+            [
+              -512,
+              384,
+              -8
+            ],
+            [
+              -512,
+              384,
+              8
+            ],
+            [
+              -512,
+              -384,
+              8
+            ]
+          ],
+          "material": "TOOLS/TOOLSNODRAW"
+        },
+        {
+          "points": [
+            [
+              -512,
+              384,
+              -8
+            ],
+            [
+              512,
+              384,
+              -8
+            ],
+            [
+              512,
+              384,
+              8
+            ]
+          ],
+          "material": "TOOLS/TOOLSNODRAW"
+        },
+        {
+          "points": [
+            [
+              512,
+              -384,
+              -8
+            ],
+            [
+              -512,
+              -384,
+              -8
+            ],
+            [
+              -512,
+              -384,
+              8
+            ]
+          ],
+          "material": "TOOLS/TOOLSNODRAW"
+        },
+        {
+          "points": [
+            [
+              -512,
+              -384,
+              8
+            ],
+            [
+              -512,
+              384,
+              8
+            ],
+            [
+              512,
+              384,
+              8
+            ]
+          ],
+          "material": "TOOLS/TOOLSNODRAW"
+        },
+        {
+          "points": [
+            [
+              -512,
+              384,
+              -8
+            ],
+            [
+              -512,
+              -384,
+              -8
+            ],
+            [
+              512,
+              -384,
+              -8
+            ]
+          ],
+          "material": "TOOLS/TOOLSNODRAW"
+        }
+      ],
+      "props": {},
+      "hidden": true
+    },
+    {
+      "id": "b854dc42-2f4a-4758-a4f4-2261c8ba09bd",
+      "name": "North wall",
+      "kind": "brush",
+      "position": [
+        0,
+        392,
+        192
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              528,
+              -8,
+              -208
+            ],
+            [
+              528,
+              -8,
+              208
+            ],
+            [
+              528,
+              8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              8,
+              -208
+            ],
+            [
+              -528,
+              8,
+              208
+            ],
+            [
+              -528,
+              -8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              8,
+              -208
+            ],
+            [
+              528,
+              8,
+              -208
+            ],
+            [
+              528,
+              8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              528,
+              -8,
+              -208
+            ],
+            [
+              -528,
+              -8,
+              -208
+            ],
+            [
+              -528,
+              -8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              -8,
+              208
+            ],
+            [
+              -528,
+              8,
+              208
+            ],
+            [
+              528,
+              8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              8,
+              -208
+            ],
+            [
+              -528,
+              -8,
+              -208
+            ],
+            [
+              528,
+              -8,
+              -208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "662acb57-42b4-46bf-b855-808a01777fb5",
+      "name": "South wall",
+      "kind": "brush",
+      "position": [
+        0,
+        -392,
+        192
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              528,
+              -8,
+              -208
+            ],
+            [
+              528,
+              -8,
+              208
+            ],
+            [
+              528,
+              8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              8,
+              -208
+            ],
+            [
+              -528,
+              8,
+              208
+            ],
+            [
+              -528,
+              -8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              8,
+              -208
+            ],
+            [
+              528,
+              8,
+              -208
+            ],
+            [
+              528,
+              8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              528,
+              -8,
+              -208
+            ],
+            [
+              -528,
+              -8,
+              -208
+            ],
+            [
+              -528,
+              -8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              -8,
+              208
+            ],
+            [
+              -528,
+              8,
+              208
+            ],
+            [
+              528,
+              8,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -528,
+              8,
+              -208
+            ],
+            [
+              -528,
+              -8,
+              -208
+            ],
+            [
+              528,
+              -8,
+              -208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {},
+      "hidden": true
+    },
+    {
+      "id": "51934af3-44f1-494c-82fe-cece0b83d6ca",
+      "name": "West wall",
+      "kind": "brush",
+      "position": [
+        -520,
+        0,
+        192
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              8,
+              -384,
+              -208
+            ],
+            [
+              8,
+              -384,
+              208
+            ],
+            [
+              8,
+              384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              384,
+              -208
+            ],
+            [
+              -8,
+              384,
+              208
+            ],
+            [
+              -8,
+              -384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              384,
+              -208
+            ],
+            [
+              8,
+              384,
+              -208
+            ],
+            [
+              8,
+              384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              8,
+              -384,
+              -208
+            ],
+            [
+              -8,
+              -384,
+              -208
+            ],
+            [
+              -8,
+              -384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              -384,
+              208
+            ],
+            [
+              -8,
+              384,
+              208
+            ],
+            [
+              8,
+              384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              384,
+              -208
+            ],
+            [
+              -8,
+              -384,
+              -208
+            ],
+            [
+              8,
+              -384,
+              -208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "f4e2e8da-6bf4-4ea7-b7b5-0eccaec12f08",
+      "name": "East wall",
+      "kind": "brush",
+      "position": [
+        520,
+        0,
+        192
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              8,
+              -384,
+              -208
+            ],
+            [
+              8,
+              -384,
+              208
+            ],
+            [
+              8,
+              384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              384,
+              -208
+            ],
+            [
+              -8,
+              384,
+              208
+            ],
+            [
+              -8,
+              -384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              384,
+              -208
+            ],
+            [
+              8,
+              384,
+              -208
+            ],
+            [
+              8,
+              384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              8,
+              -384,
+              -208
+            ],
+            [
+              -8,
+              -384,
+              -208
+            ],
+            [
+              -8,
+              -384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              -384,
+              208
+            ],
+            [
+              -8,
+              384,
+              208
+            ],
+            [
+              8,
+              384,
+              208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -8,
+              384,
+              -208
+            ],
+            [
+              -8,
+              -384,
+              -208
+            ],
+            [
+              8,
+              -384,
+              -208
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "5e216dcb-5d4c-4bd0-bfdd-4a605e202372",
+      "name": "info_player_start",
+      "kind": "entity",
+      "position": [
+        -320,
+        -220,
+        40
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "props": {
+        "classname": "info_player_start"
+      }
+    },
+    {
+      "id": "4493d288-8eb7-40d4-909f-5a0e3286cec2",
+      "name": "light",
+      "kind": "entity",
+      "position": [
+        0,
+        0,
+        280
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "props": {
+        "classname": "light",
+        "_light": "255 238 210 700"
+      }
+    },
+    {
+      "id": "04800d90-24ab-4f8d-a5a9-98c8eb0ba012",
+      "name": "Platform",
+      "kind": "brush",
+      "position": [
+        -96,
+        0,
+        48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              160,
+              -128,
+              -48
+            ],
+            [
+              160,
+              -128,
+              48
+            ],
+            [
+              160,
+              128,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01"
+        },
+        {
+          "points": [
+            [
+              -160,
+              128,
+              -48
+            ],
+            [
+              -160,
+              128,
+              48
+            ],
+            [
+              -160,
+              -128,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01"
+        },
+        {
+          "points": [
+            [
+              -160,
+              128,
+              -48
+            ],
+            [
+              160,
+              128,
+              -48
+            ],
+            [
+              160,
+              128,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01"
+        },
+        {
+          "points": [
+            [
+              160,
+              -128,
+              -48
+            ],
+            [
+              -160,
+              -128,
+              -48
+            ],
+            [
+              -160,
+              -128,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01"
+        },
+        {
+          "points": [
+            [
+              -160,
+              -128,
+              48
+            ],
+            [
+              -160,
+              128,
+              48
+            ],
+            [
+              160,
+              128,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01"
+        },
+        {
+          "points": [
+            [
+              -160,
+              128,
+              -48
+            ],
+            [
+              -160,
+              -128,
+              -48
+            ],
+            [
+              160,
+              -128,
+              -48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "62b31129-b7cc-492b-bbe3-47c71a0def58",
+      "name": "Step 1",
+      "kind": "brush",
+      "position": [
+        -256,
+        -220,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -8
+            ],
+            [
+              16,
+              -64,
+              8
+            ],
+            [
+              16,
+              64,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -8
+            ],
+            [
+              -16,
+              64,
+              8
+            ],
+            [
+              -16,
+              -64,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -8
+            ],
+            [
+              16,
+              64,
+              -8
+            ],
+            [
+              16,
+              64,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -8
+            ],
+            [
+              -16,
+              -64,
+              -8
+            ],
+            [
+              -16,
+              -64,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              8
+            ],
+            [
+              -16,
+              64,
+              8
+            ],
+            [
+              16,
+              64,
+              8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -8
+            ],
+            [
+              -16,
+              -64,
+              -8
+            ],
+            [
+              16,
+              -64,
+              -8
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "a24042f8-da53-4052-adbb-c52e69f41a32",
+      "name": "Step 2",
+      "kind": "brush",
+      "position": [
+        -224,
+        -220,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -16
+            ],
+            [
+              16,
+              -64,
+              16
+            ],
+            [
+              16,
+              64,
+              16
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -16
+            ],
+            [
+              -16,
+              64,
+              16
+            ],
+            [
+              -16,
+              -64,
+              16
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -16
+            ],
+            [
+              16,
+              64,
+              -16
+            ],
+            [
+              16,
+              64,
+              16
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -16
+            ],
+            [
+              -16,
+              -64,
+              -16
+            ],
+            [
+              -16,
+              -64,
+              16
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              16
+            ],
+            [
+              -16,
+              64,
+              16
+            ],
+            [
+              16,
+              64,
+              16
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -16
+            ],
+            [
+              -16,
+              -64,
+              -16
+            ],
+            [
+              16,
+              -64,
+              -16
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "cb9a8e11-cd54-4035-ab85-6ed623dfc49c",
+      "name": "Step 3",
+      "kind": "brush",
+      "position": [
+        -192,
+        -220,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -24
+            ],
+            [
+              16,
+              -64,
+              24
+            ],
+            [
+              16,
+              64,
+              24
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -24
+            ],
+            [
+              -16,
+              64,
+              24
+            ],
+            [
+              -16,
+              -64,
+              24
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -24
+            ],
+            [
+              16,
+              64,
+              -24
+            ],
+            [
+              16,
+              64,
+              24
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -24
+            ],
+            [
+              -16,
+              -64,
+              -24
+            ],
+            [
+              -16,
+              -64,
+              24
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              24
+            ],
+            [
+              -16,
+              64,
+              24
+            ],
+            [
+              16,
+              64,
+              24
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -24
+            ],
+            [
+              -16,
+              -64,
+              -24
+            ],
+            [
+              16,
+              -64,
+              -24
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "71dd5ea4-12fe-4961-ab75-1c0ef8773831",
+      "name": "Step 4",
+      "kind": "brush",
+      "position": [
+        -160,
+        -220,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -32
+            ],
+            [
+              16,
+              -64,
+              32
+            ],
+            [
+              16,
+              64,
+              32
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -32
+            ],
+            [
+              -16,
+              64,
+              32
+            ],
+            [
+              -16,
+              -64,
+              32
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -32
+            ],
+            [
+              16,
+              64,
+              -32
+            ],
+            [
+              16,
+              64,
+              32
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -32
+            ],
+            [
+              -16,
+              -64,
+              -32
+            ],
+            [
+              -16,
+              -64,
+              32
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              32
+            ],
+            [
+              -16,
+              64,
+              32
+            ],
+            [
+              16,
+              64,
+              32
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -32
+            ],
+            [
+              -16,
+              -64,
+              -32
+            ],
+            [
+              16,
+              -64,
+              -32
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "e0bb2e95-0956-4b7a-8847-0b8067bb9beb",
+      "name": "Step 5",
+      "kind": "brush",
+      "position": [
+        -128,
+        -220,
+        40
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -40
+            ],
+            [
+              16,
+              -64,
+              40
+            ],
+            [
+              16,
+              64,
+              40
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -40
+            ],
+            [
+              -16,
+              64,
+              40
+            ],
+            [
+              -16,
+              -64,
+              40
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -40
+            ],
+            [
+              16,
+              64,
+              -40
+            ],
+            [
+              16,
+              64,
+              40
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -40
+            ],
+            [
+              -16,
+              -64,
+              -40
+            ],
+            [
+              -16,
+              -64,
+              40
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              40
+            ],
+            [
+              -16,
+              64,
+              40
+            ],
+            [
+              16,
+              64,
+              40
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -40
+            ],
+            [
+              -16,
+              -64,
+              -40
+            ],
+            [
+              16,
+              -64,
+              -40
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "c706bbe6-5281-4e13-9354-a6fb5bed3c44",
+      "name": "Step 6",
+      "kind": "brush",
+      "position": [
+        -96,
+        -220,
+        48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -48
+            ],
+            [
+              16,
+              -64,
+              48
+            ],
+            [
+              16,
+              64,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -48
+            ],
+            [
+              -16,
+              64,
+              48
+            ],
+            [
+              -16,
+              -64,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -48
+            ],
+            [
+              16,
+              64,
+              -48
+            ],
+            [
+              16,
+              64,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -48
+            ],
+            [
+              -16,
+              -64,
+              -48
+            ],
+            [
+              -16,
+              -64,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              48
+            ],
+            [
+              -16,
+              64,
+              48
+            ],
+            [
+              16,
+              64,
+              48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -48
+            ],
+            [
+              -16,
+              -64,
+              -48
+            ],
+            [
+              16,
+              -64,
+              -48
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "429991d2-9f78-453e-901d-5f3cfacef4bc",
+      "name": "Step 7",
+      "kind": "brush",
+      "position": [
+        -64,
+        -220,
+        56
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -56
+            ],
+            [
+              16,
+              -64,
+              56
+            ],
+            [
+              16,
+              64,
+              56
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -56
+            ],
+            [
+              -16,
+              64,
+              56
+            ],
+            [
+              -16,
+              -64,
+              56
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -56
+            ],
+            [
+              16,
+              64,
+              -56
+            ],
+            [
+              16,
+              64,
+              56
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -56
+            ],
+            [
+              -16,
+              -64,
+              -56
+            ],
+            [
+              -16,
+              -64,
+              56
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              56
+            ],
+            [
+              -16,
+              64,
+              56
+            ],
+            [
+              16,
+              64,
+              56
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -56
+            ],
+            [
+              -16,
+              -64,
+              -56
+            ],
+            [
+              16,
+              -64,
+              -56
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "c09058f1-aa64-4da8-813c-03b8a3479e5f",
+      "name": "Step 8",
+      "kind": "brush",
+      "position": [
+        -32,
+        -220,
+        64
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -64
+            ],
+            [
+              16,
+              -64,
+              64
+            ],
+            [
+              16,
+              64,
+              64
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -64
+            ],
+            [
+              -16,
+              64,
+              64
+            ],
+            [
+              -16,
+              -64,
+              64
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -64
+            ],
+            [
+              16,
+              64,
+              -64
+            ],
+            [
+              16,
+              64,
+              64
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              16,
+              -64,
+              -64
+            ],
+            [
+              -16,
+              -64,
+              -64
+            ],
+            [
+              -16,
+              -64,
+              64
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              -64,
+              64
+            ],
+            [
+              -16,
+              64,
+              64
+            ],
+            [
+              16,
+              64,
+              64
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -16,
+              64,
+              -64
+            ],
+            [
+              -16,
+              -64,
+              -64
+            ],
+            [
+              16,
+              -64,
+              -64
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "faa629f6-eeff-4e87-a911-83fe2cc6a02b",
+      "name": "Column A",
+      "kind": "brush",
+      "position": [
+        320,
+        160,
+        96
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              48,
+              -48,
+              -96
+            ],
+            [
+              48,
+              -48,
+              96
+            ],
+            [
+              48,
+              48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              48,
+              -96
+            ],
+            [
+              -48,
+              48,
+              96
+            ],
+            [
+              -48,
+              -48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              48,
+              -96
+            ],
+            [
+              48,
+              48,
+              -96
+            ],
+            [
+              48,
+              48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              48,
+              -48,
+              -96
+            ],
+            [
+              -48,
+              -48,
+              -96
+            ],
+            [
+              -48,
+              -48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              -48,
+              96
+            ],
+            [
+              -48,
+              48,
+              96
+            ],
+            [
+              48,
+              48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              48,
+              -96
+            ],
+            [
+              -48,
+              -48,
+              -96
+            ],
+            [
+              48,
+              -48,
+              -96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    },
+    {
+      "id": "2467f374-43df-4c60-84aa-a50e7df686f8",
+      "name": "Column B",
+      "kind": "brush",
+      "position": [
+        320,
+        -160,
+        96
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sides": [
+        {
+          "points": [
+            [
+              48,
+              -48,
+              -96
+            ],
+            [
+              48,
+              -48,
+              96
+            ],
+            [
+              48,
+              48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              48,
+              -96
+            ],
+            [
+              -48,
+              48,
+              96
+            ],
+            [
+              -48,
+              -48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              48,
+              -96
+            ],
+            [
+              48,
+              48,
+              -96
+            ],
+            [
+              48,
+              48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              48,
+              -48,
+              -96
+            ],
+            [
+              -48,
+              -48,
+              -96
+            ],
+            [
+              -48,
+              -48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              -48,
+              96
+            ],
+            [
+              -48,
+              48,
+              96
+            ],
+            [
+              48,
+              48,
+              96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        },
+        {
+          "points": [
+            [
+              -48,
+              48,
+              -96
+            ],
+            [
+              -48,
+              -48,
+              -96
+            ],
+            [
+              48,
+              -48,
+              -96
+            ]
+          ],
+          "material": "DEV/DEV_MEASUREGENERIC01B"
+        }
+      ],
+      "props": {}
+    }
+  ],
+  "root": [],
+  "world": {
+    "classname": "worldspawn",
+    "skyname": "sky_day01_01",
+    "detailmaterial": "detail/detailsprites",
+    "detailvbsp": "detail.vbsp"
+  }
+}

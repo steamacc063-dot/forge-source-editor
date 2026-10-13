@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest a concrete level-editing workflow improvement.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What editing problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed workflow or behavior
+      description: Include relevant target games, Source branches or reference tools.
+    validations:
+      required: true

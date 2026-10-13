@@ -1,0 +1,29 @@
+name: Bug report
+description: Report an editor, map format or build problem.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Forge version and operating system
+      placeholder: v0.1.0, Windows 11
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Target game / SDK branch
+      description: Include SDK tool versions when the issue involves compilation.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include a small shareable map or synthetic example if useful. Remove private paths and credentials from logs.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
