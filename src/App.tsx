@@ -1,3 +1,7 @@
+import { SceneHierarchy } from './components/SceneHierarchy';
+import { VectorInput } from './components/VectorInput';
+import { download } from './lib/download';
+import { MATERIALS, ENTITIES } from './lib/catalog';
 import { MapSettings } from './components/MapSettings';
 import { Vector3 } from 'three';
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
@@ -10,12 +14,8 @@ import {
   ChevronDown,
   ChevronRight,
   CircleHelp,
-  Command,
   Copy,
   Crosshair,
-  Eye,
-  EyeOff,
-  FilePlus,
   FolderOpen,
   Grid3X3,
   Hammer,
@@ -29,17 +29,13 @@ import {
   Save,
   Search,
   Settings2,
-  Shrink,
   Terminal,
   Trash2,
   Undo2,
   UserRound,
   X,
   AlertTriangle,
-  Package,
   Compass,
-  Code2,
-  Sun
 } from 'lucide-react';
 import { bounds, box, clone, duplicateObject, entity, exportVMF, importVMF, newProject, readProject, room, stairs, validate, type KV, type MapObject, type Project, type V3 } from './model';
 import { Viewport, type ViewHandle, type ViewMode } from './Viewport';
@@ -48,22 +44,6 @@ import type { SDKConfig } from './desktop';
 import './style.css';
 import './classic-theme.css';
 
-const MATERIALS = [
-  { name: 'Measure · cool', path: 'DEV/DEV_MEASUREGENERIC01B', color: '#8d9aaa' },
-  { name: 'Measure · warm', path: 'DEV/DEV_MEASUREGENERIC01', color: '#b58a55' },
-  { name: 'Nodraw', path: 'TOOLS/TOOLSNODRAW', color: '#666970' },
-  { name: 'Player clip', path: 'TOOLS/TOOLSPLAYERCLIP', color: '#a1628c' },
-  { name: 'Trigger', path: 'TOOLS/TOOLSTRIGGER', color: '#d39a55' },
-  { name: 'Skybox', path: 'TOOLS/TOOLSSKYBOX', color: '#7ea6bb' }
-];
-const ENTITIES = [
-  { label: 'Player spawn', class: 'info_player_start', icon: UserRound, props: {} },
-  { label: 'Point light', class: 'light', icon: Lightbulb, props: { _light: '255 238 210 500' } },
-  { label: 'Environment light', class: 'light_environment', icon: Sun, props: { _light: '255 245 220 600', _ambient: '170 195 230 80' } },
-  { label: 'Static prop', class: 'prop_static', icon: Package, props: { model: '' } },
-  { label: 'Logic relay', class: 'logic_relay', icon: Command, props: { targetname: 'relay_01' } },
-  { label: 'GMod spawn', class: 'info_player_deathmatch', icon: UserRound, props: {} }
-];
 function initial(): Project {
   try {
     const saved = localStorage.getItem('forge.autosave');
@@ -88,8 +68,7 @@ export default function App() {
     [wire, setWire] = useState(false),
     [fly, setFly] = useState(false);
   const [tab, setTab] = useState<'materials' | 'prefabs' | 'entities' | 'console' | 'issues'>('materials');
-  const [query, setQuery] = useState(''),
-    [filter, setFilter] = useState('');
+  const [query, setQuery] = useState('');
   const [face, setFace] = useState(-1);
   const [status, setStatus] = useState('Welcome to Forge. Your workspace is saved locally.');
   const [modal, setModal] = useState<'build' | 'help' | 'property' | 'output' | null>(null);
@@ -457,63 +436,7 @@ export default function App() {
         </button>
       </div>
       <main className="workspace">
-        <aside className="hierarchy">
-          <div className="panel-heading">
-            <span>Scene hierarchy</span>
-            <button className="icon-button" aria-label="Add brush" title="Add brush (B)" onClick={addBrush}>
-              <Plus size={15} />
-            </button>
-          </div>
-          <label className="searchbox small">
-            <Search size={13} />
-            <input placeholder="Search scene…" aria-label="Search scene" value={filter} onChange={e => setFilter(e.target.value)} />
-          </label>
-          <div className="scene-root">
-            <ChevronDown size={12} />
-            <Layers size={13} />
-            <span>{project.name}</span>
-            <small>{project.objects.length}</small>
-          </div>
-          <div className="object-list">
-            {project.objects
-              .filter(o => `${o.name} ${o.props.classname ?? ''}`.toLowerCase().includes(filter.toLowerCase()))
-              .map(object => (
-                <div key={object.id} className={'object-row ' + (selected === object.id ? 'selected' : '') + (object.hidden ? ' hidden-object' : '')} style={{ paddingLeft: object.parent ? 32 : 15 }}>
-                  <button className="object-name" onClick={() => select(object.id)} onDoubleClick={() => viewport.current?.focus(object.id)}>
-                    {object.kind === 'brush' ? <Box size={14} /> : object.props.classname?.startsWith('light') ? <Lightbulb size={14} /> : <UserRound size={14} />}
-                    <span>{object.name}</span>
-                    {object.locked && <small>locked</small>}
-                  </button>
-                  <button
-                    className="eye-button"
-                    title={object.hidden ? 'Show object' : 'Hide object'}
-                    aria-label={`${object.hidden ? 'Show' : 'Hide'} ${object.name}`}
-                    onClick={() => {
-                      const next = clone(project);
-                      next.objects.find(o => o.id === object.id)!.hidden = !object.hidden;
-                      commit(next);
-                    }}
-                  >
-                    {object.hidden ? <EyeOff size={13} /> : <Eye size={13} />}
-                  </button>
-                </div>
-              ))}
-            {!project.objects.length && (
-              <div className="empty">
-                <Boxes size={26} />
-                <p>Your map starts here.</p>
-                <button onClick={addBrush}>Add a brush</button>
-              </div>
-            )}
-          </div>
-          <div className="hierarchy-footer">
-            <span>
-              <Box size={12} />
-              {count} brushes
-            </span>
-            <span>{project.objects.length - count} entities</span>
-          </div>
-        </aside>
+        <SceneHierarchy project={project} selected={selected} select={select} onFocus={id => viewport.current?.focus(id)} addBrush={addBrush} commit={commit} />
         <div className="split vertical" onPointerDown={e => resize('left', e)} />
         <section className="center">
           <div className="scene-tab">
@@ -1104,41 +1027,4 @@ export default function App() {
       )}
     </div>
   );
-}
-function VectorInput({ label, values, disabled, onChange }: { label: string; values: V3; disabled?: boolean; onChange: (v: V3) => void }) {
-  return (
-    <div className="vector-input">
-      <label>{label[0].toUpperCase() + label.slice(1)}</label>
-      <div>
-        {values.map((n, i) => (
-          <label key={i} className={'axis-field axis-' + ['x', 'y', 'z'][i]}>
-            <span>{['X', 'Y', 'Z'][i]}</span>
-            <input
-              type="number"
-              step={label === 'scale' ? 0.125 : 1}
-              aria-label={`${label} ${['X', 'Y', 'Z'][i]}`}
-              value={Math.round(n * 1000) / 1000}
-              disabled={disabled}
-              onChange={e => {
-                const value = Number(e.target.value);
-                if (!Number.isFinite(value) || (label === 'scale' && value <= 0)) return;
-                const next = [...values] as V3;
-                next[i] = value;
-                onChange(next);
-              }}
-            />
-          </label>
-        ))}
-      </div>
-    </div>
-  );
-}
-function download(text: string, name: string) {
-  const blob = new Blob([text], { type: 'text/plain' }),
-    url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = name;
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
