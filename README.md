@@ -109,3 +109,9 @@ See `THIRD_PARTY.md` for library attribution. No Valve assets are included.
 Forge is released under the [MIT license](LICENSE). Bug reports, focused pull requests and real Source SDK compatibility reports are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), [ROADMAP.md](ROADMAP.md) and [SECURITY.md](SECURITY.md) before contributing.
 
 Run `npm run package:mac` or `npm run package:windows` to create a desktop package under `release/`. Releases contain unsigned desktop builds, source code and checksums.
+
+## Map properties and environment
+
+Deselect objects to open map properties in the inspector. Set the native `skyname`, edit arbitrary worldspawn properties, create a six-brush sky boundary, or add sunlight, fog and a 3D sky camera. Existing geometry is not removed by the boundary helper. A sky camera requires a separate miniature scene; game textures and the resulting sky are not rendered in the editor yet. Sky surfaces with a blank sky name block compilation; missing sunlight and unexpanded instances are reported in Map checks.
+
+The VMF tree codec and brush geometry are now separated into `src/core/vmf-codec.ts` and `src/core/geometry.ts`; `src/model.ts` remains the compatibility entry point. Map settings live in `src/components/MapSettings.tsx`.
